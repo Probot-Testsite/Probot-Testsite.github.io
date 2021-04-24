@@ -63,10 +63,10 @@
 <h3>Setup locally</h3>
 <p>This app depends on NodeJS to run the application and MongoDB for data persistence. Follow the following steps to run this app locally:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># Install dependencies</span><br><span class="token function">npm</span> <span class="token function">install</span></code></pre>
-<p>Then, copy <code>.env.example</code> to <code>.env</code> and populate it with your MongoDB host and credentials and your proxy url. Make sure to run a tool like <a href="https://ngrok.com/">ngrok</a> or <a href="https://github.com/localtunnel/localtunnel">localtunnel</a> to expose your application to the internet. Smee.io is not supported, as it is a webhook proxy service and cannot forward Express endpoint calls</p>
+<p>Then, copy <code>.env.example</code> to <code>.env</code> and populate it with your MongoDB host and credentials and your proxy url. Make sure to run a tool like <a href="https://ngrok.com/">ngrok</a> or <a href="https://github.com/localtunnel/localtunnel">localtunnel</a> to expose your application to the internet. <a href="http://Smee.io">Smee.io</a> is not supported, as it is a webhook proxy service and cannot forward Express endpoint calls</p>
 <p>Now you can run the app with the following command:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run build:watch</code></pre>
-<p>This will prompt you to visit http://localhost:3000 and configure the app on the GitHub side. After you do this it will automatically populate the <code>APP_ID</code>, <code>WEBHOOK_SECRET</code> and <code>PRIVATE_KEY</code> field in the <code>.env</code> file.</p>
+<p>This will prompt you to visit <a href="http://localhost:3000">http://localhost:3000</a> and configure the app on the GitHub side. After you do this it will automatically populate the <code>APP_ID</code>, <code>WEBHOOK_SECRET</code> and <code>PRIVATE_KEY</code> field in the <code>.env</code> file.</p>
 <h3>Build, test, and run</h3>
 <pre><code>npm run build
 npm test

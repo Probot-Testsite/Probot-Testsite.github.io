@@ -1,17 +1,17 @@
 <h1>rezensent</h1>
-<p>The rezensent (german for reviewer) is a github app which help managing big pull requests in a
+<p>The rezensent (german for reviewer) is a github app which help managing big pull requests in a<br>
 repository divided by code ownership rules.</p>
 <h2>Idea</h2>
-<p>Split a pull request into several smaller ones along the lines of ownership.
+<p>Split a pull request into several smaller ones along the lines of ownership.<br>
 Then maintain the spitted pull requests using the app.</p>
 <p>It is loosely based on the idea of <a href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext">googles rosie</a></p>
 <blockquote>
-<p>With Rosie, developers create a large patch, either through a find-and-replace
-operation across the entire repository or through more complex refactoring
-tools. Rosie then takes care of splitting the large patch into smaller
-patches, testing them independently, sending them out for code review, and
-committing them automatically once they pass tests and a code review. Rosie
-splits patches along project directory lines, relying on the code-ownership
+<p>With Rosie, developers create a large patch, either through a find-and-replace<br>
+operation across the entire repository or through more complex refactoring<br>
+tools. Rosie then takes care of splitting the large patch into smaller<br>
+patches, testing them independently, sending them out for code review, and<br>
+committing them automatically once they pass tests and a code review. Rosie<br>
+splits patches along project directory lines, relying on the code-ownership<br>
 hierarchy described earlier to send patches to the appropriate reviewers</p>
 </blockquote>
 <h2>How it works</h2>
@@ -41,20 +41,20 @@ hierarchy described earlier to send patches to the appropriate reviewers</p>
 <h3>Steps</h3>
 <ul>
 <li>
-<p>Whenever a pull request is labeled with the configured 'manage label', the app
+<p>Whenever a pull request is labeled with the configured 'manage label', the app<br>
 will create a pull request with just the changes for each team.</p>
 </li>
 <li>
-<p>Then each team can review their changes separated from the other teams and
+<p>Then each team can review their changes separated from the other teams and<br>
 when the pull request is approved it can be merged.</p>
 </li>
 <li>
-<p>As soon as the app detects a merge, the managed pull request is updated to the
-HEAD of it's base branch. And all remaining team pull requests are
+<p>As soon as the app detects a merge, the managed pull request is updated to the<br>
+HEAD of it's base branch. And all remaining team pull requests are<br>
 update/recreated.</p>
 </li>
 <li>
-<p>When there are no changes left, the managed pull request is closed as all
+<p>When there are no changes left, the managed pull request is closed as all<br>
 changes are integrated into it's base branch.</p>
 </li>
 </ul>
@@ -64,7 +64,7 @@ changes are integrated into it's base branch.</p>
 </p>
 <h2>Usage</h2>
 <h3>Public App</h3>
-<p>The app is publicly available for free at https://github.com/apps/rezensent.</p>
+<p>The app is publicly available for free at <a href="https://github.com/apps/rezensent">https://github.com/apps/rezensent</a>.</p>
 <p>You can just add it to your github repository and complete the onboarding process.</p>
 <h3>Docker</h3>
 <p>The app could be hosted using the <a href="https://hub.docker.com/r/knisterpeter/rezensent">provided docker image</a>.</p>
