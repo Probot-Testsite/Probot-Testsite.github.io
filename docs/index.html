@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="height-full" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/assets/dist/styles.css"
+    />
+    <!-- favicon files -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=jw3d9vxKo4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=jw3d9vxKo4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=jw3d9vxKo4"
+    />
+    <link rel="manifest" href="/site.webmanifest?v=jw3d9vxKo4" />
+    <link
+      rel="mask-icon"
+      href="/safari-pinned-tab.svg?v=jw3d9vxKo4"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/favicon.ico?v=jw3d9vxKo4" />
+    <meta name="theme-color" content="#66cce0" />
+    <!-- end of favicon files> -->
+
+    <meta name="twitter:site" content="@ProbotTheRobot" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+     <meta property="og:image" content="/assets/img/card.png" />
+    <meta property="og:image:height" content="1280" />
+    <meta property="og:image:width" content="630" />
+    
+    <meta property="twitter:image:alt" content="" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta property="twitter:image" content="/assets/img/card.png" />
+    <meta property="twitter:image:height" content="1280" />
+    <meta property="twitter:image:width" content="630" />
+    <meta property="twitter:image:alt" content="" />
+    <meta property="twitter:image:type" content="image/png" />
+
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    
+
+<div class="border-bottom">
+  <div class="container-lg px-3">
+    <div class="py-4 d-flex flex-justify-between">
+      <h1 class="alt-h4 lh-default">
+        
+        <a href="/" class="no-underline text-uppercase text-brand-blue-dark d-flex flex-items-center">
+          <img class="mr-2 mt-n2" src="/assets/img/probot-head.png" width="36" height="36" alt="">
+          <span class="hide-sm">Probot</span>
+        </a>
+        
+      </h1>
+      <nav class="text-bold text-right">
+        <a class="text-inherit px-2 d-inline-block" href="/apps/">Apps</a>
+        <a class="text-inherit px-2 d-inline-block" href="/docs/">Docs</a>
+        <a class="text-inherit px-2 d-inline-block" href="/community/">Community</a>
+      </nav>
+    </div>
+  </div>
+</div>
+ 
+<div class="container-lg px-3 py-6">
+  <div class="d-md-flex flex-md-row flex-md-row-reverse gutter-md-spacious">
+    <div class="col-md-9 markdown-body p-md-6">
+      <h1>Introduction</h1>
+<p>If you've ever thought, &quot;wouldn't it be cool if GitHub could…&quot;; imma stop you right there. Most features can actually be added via <a href="https://docs.github.com/apps/">GitHub Apps</a>, which extend GitHub and can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. Apps are first class actors within GitHub.</p>
+<p><strong>Probot is a framework for building <a href="http://docs.github.com/apps">GitHub Apps</a> in <a href="https://nodejs.org/">Node.js</a></strong>. It aims to eliminate all the drudgery–like receiving and validating webhooks, and doing authentication handstands–so you can focus on the features you want to build.</p>
+<p>Probot apps are easy to write, deploy, and share. Many of the most popular Probot apps are hosted, so there's nothing for you to deploy and manage. Here are just a few examples of things that have been built with Probot:</p>
+<ul>
+  <li><a href="/apps/allcontributors">All Contributors</a> - Easily recognize all contributions per the all-contributors spec</li>
+  <li><a href="/apps/approveman">ApproveMan</a> - Approves pull requests with safe changes for protected branches.</li>
+  <li><a href="/apps/auto-assign">Auto Assign</a> - Add reviewers/assignees to pull requests when pull requests are opened.</li>
+  <li><a href="/apps/auto-comment">Auto-comment</a> - Comments on new issues and pull requests based on your configuration.</li>
+  <li><a href="/apps/background-check">Background Check</a> - Notifies maintainers when new contributors who have been toxic in the past join the project</li>
+  <li><a href="/apps/boring-cyborg">Boring Cyborg</a> - Add labels on PRs based on the FilePaths & Welcome First time users & much more</li>
+  <li><a href="/apps/branch-switcher">Branch Switcher</a> - Switches the base branch of pull requests to the preferred branch.</li>
+  <li><a href="/apps/check-group">Check Group</a> - Groups CI checks based on the sub-projects for monorepo projects.</li>
+  <li><a href="/apps/ci-reporter">CI Reporter</a> - Pastes the error output of a failing build into the relevant PR.</li>
+  <li><a href="/apps/close-issue-app">Close Issue</a> - Comment on the issues that do not include some contents then close them.</li>
+  <li><a href="/apps/create-issue-branch">Create Issue Branch</a> - Automates the creation of issue branches.</li>
+  <li><a href="/apps/dco">Developer Certificate of Origin</a> - Enforce the DCO on Pull Requests</li>
+  <li><a href="/apps/delete-merged-branch">Delete merged branch</a> - No more manually deleting merged branches, this lovely app does it for you.</li>
+  <li><a href="/apps/dep">Dep</a> - A dependency manager for your Pull Requests.</li>
+  <li><a href="/apps/deploy">Deploy</a> - Triggers a deployment event on GitHub based on pull request labels.</li>
+  <li><a href="/apps/duplicator">Duplicator</a> - Create full copies of issues with a single command</li>
+  <li><a href="/apps/eslint-disable-watcher">ESLint Disable Watcher</a> - Comments on pull requests that try to disable eslint rules.</li>
+  <li><a href="/apps/first-timers">First Timers</a> - Create starter issues to help onboard new open source contributors</li>
+  <li><a href="/apps/gitpod-io">Gitpod</a> - Open issues and pull requests in Gitpod</li>
+  <li><a href="/apps/handlebar-templates">Handlebar Templates</a> - Issue body and pull request's body through handlebars to generate new bodies</li>
+  <li><a href="/apps/helpr">helPR</a> - Assigns labels to issues based on the status of the PR associated with it.</li>
+  <li><a href="/apps/in-solidarity">In Solidarity</a> - A GitHub bot to add status checks for inclusive language.</li>
+  <li><a href="/apps/invite-contributors">invite-contributors</a> - Invite authors of merged pull requests to your organization</li>
+  <li><a href="/apps/issue-check">Issue Check</a> - Checks issues against keywords and task lists to ensure required info is there</li>
+  <li><a href="/apps/issuelabeler">Issue Labeler</a> - Label issues based on title and body against list of defined labels.</li>
+  <li><a href="/apps/markdownify">Markdownify</a> - Adds links for rendered edited markdown files to the bottom of pull requests</li>
+  <li><a href="/apps/mergeable">Mergeable</a> - Prevent merging of Pull Requests based on configurations.</li>
+  <li><a href="/apps/minimum-reviews">Minimum reviews</a> - Enforce a minimum number of reviews on Pull Requests</li>
+  <li><a href="/apps/no-response">No Response</a> - Closes Issues where the author hasn't responded to a request for more information.</li>
+  <li><a href="/apps/ooo">OOO</a> - Respond to @mentions with an auto-response when you are OOO</li>
+  <li><a href="/apps/organization-workflows">Organization Workflows</a> - Need to centrally manage and run Actions workflows across multiple repositories? This app does it for you.</li>
+  <li><a href="/apps/polls">Polls</a> - Create polls in GitHub issues.</li>
+  <li><a href="/apps/pr-label-enforcer">PR Label Enfoce</a> - Enforce certain labels on a PR before you can merge by using status checks</li>
+  <li><a href="/apps/pr-triage">PR Triage</a> - Add a label depending on the pull request's status</li>
+  <li><a href="/apps/prettifier">Prettifier</a> - Prettifier keeps your repository content formatted using Prettier.</li>
+  <li><a href="/apps/prevent-public-repos">Prevent Public Repos</a> - Prevent Repos from being made public in an organization</li>
+  <li><a href="/apps/pull">Pull</a> - Keep your forks up-to-date.</li>
+  <li><a href="/apps/release-drafter">Release Drafter</a> - Drafts your next release notes as pull requests are merged into master.</li>
+  <li><a href="/apps/reminders">Reminders</a> - Set reminders on Issues and Pull Requests</li>
+  <li><a href="/apps/remove-outside-collaborators">Remove Outside Collaborators</a> - Monitors and instantly removes any outside collaborators added to your Organization.</li>
+  <li><a href="/apps/request-info">Request Info</a> - Requests more info on issues and pull requests with the default title or an empty body.</li>
+  <li><a href="/apps/https://github.com/apps/rezensent">Rezensent</a> - The rezensent (german for reviewer) is a github app which help managing big pull requests in a repository divided by code ownership rules</li>
+  <li><a href="/apps/rtd-helper">Read The Docs Helper</a> - Assists reviewing using Read The Docs (RTD)</li>
+  <li><a href="/apps/semantic-pull-requests">Semantic Pull Requests</a> - Status check that ensures your pull requests follow the Conventional Commits spec</li>
+  <li><a href="/apps/sentiment-bot">Sentiment Bot</a> - Replies to toxic comments with a maintainer designated reply and a link to the repo's code of conduct</li>
+  <li><a href="/apps/settings">Settings</a> - Pull Requests for repository settings</li>
+  <li><a href="/apps/similar-code-searcher">Similar Code Searcher</a> - Searches files similar with deleted code in Pull Request.</li>
+  <li><a href="/apps/size-plugin">size-plugin</a> - A GitHub 🤖 that helps you to keep an 👁️ on static assert 📦 sizes of your application and gives instant feedback 📝 for developer whenever they make a change</li>
+  <li><a href="/apps/stale">Stale</a> - Close stale Issues and Pull Requests</li>
+  <li><a href="/apps/tap-release">Tap Release</a> - Update Homebrew taps when you publish new GitHub releases.</li>
+  <li><a href="/apps/tests-checker">Tests Checker</a> - Requires writing the tests in Pull Requests.</li>
+  <li><a href="/apps/todo">todo</a> - Creates new issues from actionable comments in your code.</li>
+  <li><a href="/apps/triage-new-issues">Triage New Issues</a> - Adds `triage` label to newly-created issues and then removes it when other label(s) are added</li>
+  <li><a href="/apps/unfurl-links">Unfurl Links</a> - Add context to the links shared in discussions</li>
+  <li><a href="/apps/https://github.com/apps/untrivializer">Untrivializer</a> - An app that asks if you're really sure something is trivial when you make a comment in Github issues.</li>
+  <li><a href="/apps/update-docs">Update Docs</a> - Replies to newly opened pull requests that do not update a file in the `/docs` folder or the `README`</li>
+  <li><a href="/apps/weekly-digest">Weekly Digest</a> - Weekly automated summary of activity on your GitHub repository</li>
+  <li><a href="/apps/welcome">Welcome</a> - Welcomes new users</li>
+  <li><a href="/apps/wip">Work In Progress</a> - Prevent merging of Pull Requests with "WIP" in the title</li>
+</ul>
+<p>Check out the <a href="https://probot.github.io/apps/">featured apps</a> or <a href="https://github.com/search?q=topic%3Aprobot-app&amp;type=Repositories">browse more examples on GitHub</a></p>
+<p>Ready to get started?</p>
+
+
+      
+
+      <div class="d-flex border-bottom border-gray-light mt-6 mb-3 py-3 color-text-tertiary">
+        <div class="col-6">
+          
+        </div>
+        <div class="col-6 text-right">
+          
+            <a href=""></a>
+            <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-chevron-right v-align-text-bottom" aria-hidden="true"><path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"></path></svg>
+          
+        </div>
+      </div>
+
+      <p class="alt-text-small color-text-tertiary">
+        Found a mistake or want to help improve this documentation?
+        <a href="https://github.com/probot/probot/edit//">Suggest changes on GitHub</a>
+      </p>
+    </div>
+    <div id="toc" class="col-md-3 py-6">
+      <div class="toc-wrap">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/anchor.min.js"></script>
+<script type="text/javascript">
+  anchors.options = {
+    placement: 'left',
+    class: 'color-text-secondary no-underline'
+  };
+
+  anchors.add();
+  anchors.remove('.alt-h4');
+</script>
+ <div class="color-bg-tertiary color-text-secondary border-top pt-4 mt-4">
+  <div class="container-lg px-3 page-section d-md-flex flex-md-row-reverse">
+    <div class="col-md-6"><!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup" class="mb-3">
+  <form action="//opensoul.us13.list-manage.com/subscribe/post?u=f8cb6fe4ce6000c8b5817787c&amp;id=a0282a3736" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    	<h3 class="alt-h4 lh-condensed"><label for="mce-EMAIL">Subscribe</label></h3>
+    	<p>Get occasional updates on new apps &amp; features.</p>
+    	<div class="d-flex flex-row gutter-condensed mb-sm-2">
+        <div class="flex-self-stretch col-8">
+          <input type="email" value="" name="EMAIL" class="form-control width-full" id="mce-EMAIL" placeholder="email address" required>
+        </div>
+        <div class="flex-justify-end col-4">
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn width-full text-center">
+        </div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f8cb6fe4ce6000c8b5817787c_a0282a3736" tabindex="-1" value=""></div>
+    </div>
+  </form>
+</div>
+<!--End mc_embed_signup-->
+</div>
+    <div class="col-md-6">
+      <p>
+        <span class="mr-2 d-inline-block">
+          <a
+            class="github-button"
+            href="https://github.com/probot/probot"
+            data-size="large"
+            data-icon="octicon-star"
+            data-show-count="true"
+            aria-label="Star probot/probot on GitHub"
+            ga-on="click"
+            ga-hit-type="social"
+            ga-social-network="GitHub"
+            ga-social-action="star"
+            >Star</a
+          >
+        </span>
+        <a
+          href="https://twitter.com/ProbotTheRobot"
+          class="twitter-follow-button"
+          data-size="large"
+          data-show-screen-name="false"
+          data-show-count="false"
+          >Follow @ProbotTheRobot</a
+        >
+        <script
+          async
+          src="//platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </p>
+      <p>
+        <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-code" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg> with <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-heart" aria-hidden="true"><path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"></path></svg> by
+        <a class="color-text-tertiary" href="https://github.com/probot"
+          >the Probot community</a
+        >
+      </p>
+      <p style="opacity: 0.5">
+        <span class="mr-2"
+          >Code licensed
+          <a
+            class="text-inherit"
+            href="https://github.com/probot/probot/blob/master/LICENSE"
+            >ISC</a
+          ></span
+        >
+        <span
+          >Docs licensed
+          <a
+            class="text-inherit"
+            href="https://creativecommons.org/licenses/by/4.0/"
+            >CC-BY-4.0</a
+          ></span
+        >
+      </p>
+    </div>
+  </div>
+  <div class="text-center"></div>
+</div>
+<script async src="https://buttons.github.io/buttons.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </body>
+</html>
